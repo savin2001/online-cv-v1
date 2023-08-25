@@ -1,0 +1,175 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.App {
+  max-height: 90vh;
+}
+
+.pdf-container {
+  border: #318535 1px dashed;
+  max-height: 80vh;
+  overflow: auto;
+  opacity: 0;
+  /* Initially hide the container */
+  transition: opacity 0.5s ease;
+  /* Add transition effect */
+}
+.react-pdf__Page__textContent{
+  display: none !important;
+}
+.react-pdf__Page__annotations {
+  display: none !important;
+}
+
+.pdf-container.loaded {
+  opacity: 1;
+  /* Show the container smoothly */
+}
+
+.page-controls {
+  margin: 20px;
+}
+
+.page-number {
+  margin: 20px;
+}
+
+.page-controls button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.page-controls button:hover {
+  background-color: #318f36;
+  transform: scale(1.05);
+}
+
+.page-controls button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icons .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 10px;
+  color: #ccc;
+  transition: transform 0.3s ease;
+}
+
+.social-icons .icon:hover {
+  transform: scale(1.1);
+  color: #318535;
+  cursor: pointer;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .avatar {
+    width: 120px;
+    height: 120px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .social-icons .icon {
+    margin: 5px;
+  }
+
+  .page-number {
+    margin: 10px;
+  }
+
+  .page-controls {
+    margin: 10px;
+  }
+
+  .page-controls button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
