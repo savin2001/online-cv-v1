@@ -8,7 +8,7 @@ import {
 import { BiLogoNetlify } from "react-icons/bi";
 import { Tooltip } from "react-tooltip";
 import "./App.css";
-import CV from "./media/Osuka_Savin_CV.pdf";
+import CV from "./media/Osuka_Savin_CV_2024_Q3_CV.pdf";
 import profile from "./media/osuka_savin.jpg";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
